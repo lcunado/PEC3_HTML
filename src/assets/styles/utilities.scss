@@ -1,14 +1,90 @@
+
+/* ============================
+   INDEX
+   ============================ */
 .title-main {
-  @apply font-header text-granate text-4xl md:text-6xl leading-tight;
+    @apply font-header text-granate text-4xl md:text-6xl leading-tight;
 }
 
 .info-block { 
-    @apply flex flex-col items-center justify-center text-center uppercase z-20; 
+    @apply flex flex-col items-center text-center z-20; 
 }
 
 .btn-primary {
-  @apply bg-marron text-main font-bold uppercase px-4 py-2 rounded-md hover:bg-marron-dark transition;
+    @apply bg-marron text-main font-bold uppercase px-4 py-2 rounded-md hover:bg-marron-dark transition;
 }
 
+.title-shadow { 
+    text-shadow: 2px 2px 6px rgb(0 0 0 / 50%); 
+}
+
+/* ============================
+   HEADER
+   ============================ */
+.header {
+    @apply relative z-header flex justify-between items-center 
+         px-8 py-4 bg-main text-granate;
+}
+
+.header-toggle {
+    @apply md:hidden border-0 bg-transparent cursor-pointer;
+}
+
+.header-toggle span {
+    @apply block w-6 h-[3px] my-[5px] bg-text transition-all;
+}
+
+.header-menu {
+    @apply absolute top-full right-0 hidden flex-col w-full p-4 bg-main;
+}
+
+.header-menu-open {
+    @apply flex;
+}
+
+.header-link {
+    @apply py-2 text-xl;
+}
+
+/* ============================
+   NAV
+   ============================ */
+.nav-list,
+.footer-extra {
+    @apply hidden md:flex justify-center items-center gap-8 m-0 p-0 list-none;
+}
+
+.nav-link,
+.footer-link {
+    @apply text-text text-sm uppercase font-semibold no-underline 
+         transition-colors hover:text-marron;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+.footer {
+    @apply relative z-header flex justify-between items-center 
+         px-8 py-4 bg-granate text-main text-xs text-center;
+}
+
+.footer-nav-group {
+    @apply flex justify-center gap-8;
+}
+
+.footer-social {
+    @apply flex justify-center gap-2 mt-4;
+}
+
+.footer-social-icon {
+    @apply w-8 h-8 object-contain transition hover:opacity-70;
+}
+
+/* ============================
+   LOGO
+   ============================ */
+.logo-img {
+    @apply block h-10;
+}
 
 

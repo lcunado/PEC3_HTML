@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
+    "./src/**/*.{html,js,scss}",
     "./views/**/*.html",
     "./*.html"
   ],
@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         header: ["Georgia", "serif"], 
         body: ["Inter", "Helvetica Neue", "Arial", "sans-serif"],
+      },
+      zIndex: { 
+        header: "1000", 
       }
     }
   },

@@ -4,14 +4,16 @@
  */
 
   /**
- * Import utilities
- */
- @use "utilities";
-
- /**
  * Import tailwind
  */
  @import "tailwind.css";
+
+  /**
+ * Import utilities
+ */
+ @import "utilities";
+
+
 
 /**
  * Do NOT include anything else in this file!
