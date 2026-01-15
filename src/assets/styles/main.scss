@@ -3,17 +3,15 @@
  * Do not include SCSS code in this file.
  */
 
+  /**
+ * Import utilities
+ */
+ @use "utilities";
+
  /**
- * Import dependencies
+ * Import tailwind
  */
-@use "dependencies";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
- @use "layouts/home";
+ @import "tailwind.css";
 
 /**
  * Do NOT include anything else in this file!

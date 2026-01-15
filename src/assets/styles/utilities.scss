@@ -1,0 +1,14 @@
+.title-main {
+  @apply font-header text-granate text-4xl md:text-6xl leading-tight;
+}
+
+.info-block { 
+    @apply flex flex-col items-center justify-center text-center uppercase z-20; 
+}
+
+.btn-primary {
+  @apply bg-marron text-main font-bold uppercase px-4 py-2 rounded-md hover:bg-marron-dark transition;
+}
+
+
+
