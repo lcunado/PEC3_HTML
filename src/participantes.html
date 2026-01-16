@@ -1,20 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
     <title>Participantes - Jornada de Cocina Cántabra</title>
   </head>
 
-  <body class="bg-main text-text">
+  <body class="bg-main text-text font-body">
 
     <!-- Header -->
     <include src="./views/header.html"></include>
 
     <!-- Main -->
-    <main>
-      <p>Participantes</p>
+    <main class="container mx-auto px-4 pt-0 pb-8">
+
+      <h1 class="font-header text-center text-granate 
+        text-[clamp(2rem,3.5vw,3rem)]">
+        Participantes
+      </h1>
+
+      <!-- Participantes -->
+      <section>
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+          <include src="./views/participante-card.html" locals='{
+            "img": "./assets/images/chef1.webp",
+            "alt": "Chef Martín Gutiérrez",
+            "name": "Martín Gutiérrez",
+            "desc": "Chef cántabro con estrella michelín."
+          }'></include>
+
+          <include src="./views/participante-card.html" locals='{
+            "img": "./assets/images/chef2.webp",
+            "alt": "Chef Diego Fernández",
+            "name": "Diego Fernández",
+            "desc": "Apasionado de la cocina tradicional cántabra."
+          }'></include>
+
+          <include src="./views/participante-card.html" locals='{
+            "img": "./assets/images/chef3.webp",
+            "alt": "Chef Laura Ceballos",
+            "name": "Laura Ceballos",
+            "desc": "Especialista en cocina tradicional cántabra."
+          }'></include>
+
+          <include src="./views/participante-card.html" locals='{
+            "img": "./assets/images/chef4.webp",
+            "alt": "Chef Sofía López",
+            "name": "Sofía López",
+            "desc": "Especialista en postres artesanales."
+          }'></include>
+
+          <include src="./views/participante-card.html" locals='{
+            "img": "./assets/images/chef5.webp",
+            "alt": "Chef Carmen Ruiz",
+            "name": "Carmen Ruiz",
+            "desc": "Premiada al mejor cocido cántabro."
+          }'></include>
+
+          <include src="./views/participante-card.html" locals='{
+            "img": "./assets/images/chef6.webp",
+            "alt": "Chef Álvaro Santamaría",
+            "name": "Álvaro Santamaría",
+            "desc": "Chef innovador con raíces cántabras."
+          }'></include>
+
+        </div>
+      </section>
+
     </main>
 
     <!-- Footer -->
@@ -22,6 +76,6 @@
 
     <!-- Scripts obligatorios -->
     <script type="module" src="./assets/scripts/main.js"></script>
-    
+
   </body>
 </html>
